@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Learning Notes</title>
+    <title>Trading Notes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,36 +37,29 @@
         .container {
             width: 80%;
             margin: 20px auto;
-            text-align: center;
         }
-        .subject-buttons {
-            margin-top: 50px;
-        }
-        .subject-buttons a {
-            background-color: #333;
-            color: white;
-            padding: 15px 30px;
-            margin: 10px;
+        .note {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
             border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
         }
-        .subject-buttons a:hover {
-            background-color: #444;
+        .note h3 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Learning Notes</h1>
-        <p>Click below to explore the subjects I've been learning!</p>
+        <h1>Trading Notes</h1>
+        <p>My journey into trading and investing!</p>
     </header>
 
     <nav>
+        <a href="index.html">Home</a>
         <a href="math.html">Math</a>
         <a href="programming.html">Programming</a>
-        <a href="trading.html">Trading</a>
         <a href="physics.html">Physics</a>
         <a href="biology.html">Biology</a>
         <a href="chemistry.html">Chemistry</a>
@@ -74,16 +67,20 @@
     </nav>
 
     <div class="container">
-        <div class="subject-buttons">
-            <a href="math.html">Math Notes</a>
-            <a href="programming.html">Programming Notes</a>
-            <a href="trading.html">Trading Notes</a>
-            <a href="physics.html">Physics Notes</a>
-            <a href="biology.html">Biology Notes</a>
-            <a href="chemistry.html">Chemistry Notes</a>
-            <a href="psychology.html">Psychology Notes</a>
+        <div class="note">
+            <h3>Stock Market Basics</h3>
+            <p>The stock market is a place where buyers and sellers trade stocks. Key concepts include stocks, bonds, ETFs, and indices...</p>
+        </div>
+        <div class="note">
+            <h3>Technical Analysis</h3>
+            <p>Technical analysis involves studying past market data, primarily price and volume, to forecast future market behavior...</p>
+        </div>
+        <div class="note">
+            <h3>Risk Management in Trading</h3>
+            <p>Risk management involves strategies to minimize losses and maximize gains. Key concepts include stop-loss orders, position sizing, and diversification...</p>
         </div>
     </div>
 
 </body>
 </html>
+
