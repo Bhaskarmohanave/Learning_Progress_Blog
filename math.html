@@ -47,6 +47,20 @@
         .note h3 {
             margin-top: 0;
         }
+        .hidden {
+            display: none;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -68,18 +82,233 @@
 
     <div class="container">
         <div class="note">
-            <h3>Introduction to Algebra</h3>
-            <p>Algebra involves variables, equations, and expressions. Basic operations in algebra include addition, subtraction, multiplication, and division...</p>
-        </div>
-        <div class="note">
-            <h3>Trigonometry Basics</h3>
-            <p>Trigonometry is the study of triangles, especially right-angled triangles. Key functions include sine, cosine, and tangent...</p>
-        </div>
-        <div class="note">
-            <h3>Complex Numbers</h3>
-            <p>Complex numbers are numbers that have both a real part and an imaginary part. They are written as a + bi...</p>
+            <h3>Math Concepts</h3>
+            <button class="btn" onclick="toggleVisibility('roadmap')">Toggle Roadmap</button>
+            <button class="btn" onclick="toggleVisibility('progress')">Toggle Progress</button>
+            <button class="btn" onclick="toggleVisibility('notes')">Toggle Notes</button>
+
+            <div id="roadmap" class="hidden">
+                <h2>Roadmap:</h2>
+                <p><ol>
+                    <li>
+                        <h3>Basic Mathematics (Months 1–3)</h3>
+                        <h4>▪️Arithmetic, Fractions, Decimals, Percentages</h4>
+                        <ul>
+                            <li><b>Basic Operations: </b><i>Addition, subtraction, multiplication, and division</i><br><br></li>
+                            <li><b>Properties of Numbers: </b><i>Commutative, associative, distributive properties</i><br><br></li>
+                            <li><b>Fractions:</b> <i>Simplification, addition, subtraction, multiplication, division of fractions</i><br><br></li>
+                            <li><b>Decimals:</b> <i>Converting fractions to decimals, adding and subtracting decimals</i><br><br></li>
+                            <li><b>Percentages:</b> <i>Finding percentages, percentage increase/decrease, applications in real-life problems</i><br><br></li>
+                        <p><b>Description: </b>These basic operations are the foundation of all computational tasks, from calculating financial transactions to handling numerical data in machine learning. Understanding fractions, decimals, and percentages is critical when dealing with probabilities, normalization, and scaling in data preprocessing for AI.</p>
+                    </ul>
+                    </li>
+                    <hr/>
+                    
+                    <li>
+                        <h3>Pre-Algebra & Algebra (Months 3–6)</h3>
+                        <h4>▪️Linear Equations, Quadratics, Polynomials</h4>
+                        <ul>
+                            <li><b>Linear Equations:</b> <i>Solving for unknowns, graphing linear equations, slope-intercept form, point-slope form</i><br><br></li>
+                            <li><b>Quadratic Equations:</b> <i>Factoring quadratics, completing the square, quadratic formula, discriminant</i><br><br></li>
+                            <li><b>Polynomials:</b> <i>Polynomial addition, subtraction, multiplication, long division, factorization</i><br><br></li>
+                        <p><b>Description: </b>Algebra is essential for creating algorithms that solve problems with unknown variables. In AI, linear equations and polynomials are used in linear regression, data fitting, and optimizing parameters for machine learning models.</p>
+                        
+                    </ul>
+                        <h4>▪️Systems of Equations, Rational Expressions, Exponents</h4>
+                        <ul>
+                            <li><b>Systems of Equations:</b> <i>Solving using substitution, elimination, and matrix methods</i><br><br></li>
+                            <li><b>Rational Expressions: </b> <i>Simplification, operations with rational expressions</i><br><br></li>
+                            <li><b>Exponents:</b> <i>Laws of exponents, scientific notation, exponential growth and decay</i><br><br></li>
+                            <p><b>Description: </b>Systems of equations are fundamental in AI algorithms like linear programming and optimization tasks. Exponentiation and rational expressions are essential for representing and solving equations in machine learning, including growth models and exponential decay in data.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Geometry & Trigonometry (Months 7–12)</h3>
+                        <h4>▪️Coordinate Geometry, Pythagorean Theorem, Trigonometric Identities</h4>
+                        <ul>
+                            <li><b>Coordinate Geometry:</b><i>Plotting points on a graph, distance formula, midpoint formula, slope of a line</i><br><br></li>
+                            <li><b>Pythagorean Theorem:</b> <i>Relation between the sides of a right triangle, applying the theorem in distance calculations</i><br><br></li>
+                            <li><b>Trigonometric Functions:</b> <i>Sine, cosine, tangent, secant, cosecant, and cotangent</i><br><br></li>
+                            <li><b>Trigonometric Identities:</b> <i>Pythagorean identities, reciprocal identities, quotient identities, co-function identities, angle sum and difference identities</i><br><br></li>
+                            <p><b>Description:</b>Geometry and trigonometry are key in computer graphics, 3D rendering, and robotics. Trigonometric functions are vital in image processing, signal processing, and object recognition tasks. They also play an important role in transformations used in 3D game engines.</p>
+                        </ul>
+                    
+                        <h4>▪️Vectors and 3D Geometry</h4>
+                        <ul>
+                            <li><b>Vectors:</b><i>Vector addition, scalar multiplication, dot product, cross product, magnitude and direction</i><br><br></li>
+                            <li><b>3D Geometry:</b> <i>Cartesian coordinates in 3D, equations of planes and lines in 3D, distance between points in 3D</i><br><br></li>
+                            <p><b>Description:</b>In AI, vectors are used to represent data in high-dimensional spaces, such as images and text (e.g., word embeddings in NLP). 3D geometry is fundamental for computer vision and robotics, enabling systems to process and interpret spatial data.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Pre-Calculus & Calculus (Months 13–18)</h3>
+                        <h4>▪️Limits, Differentiation, Integration</h4>
+                        <ul>
+                            <li><b>Limits:</b><i>Understanding the concept of limits, limits at infinity, and continuity</i><br><br></li>
+                            <li><b>Differentiation:</b> <i>Derivatives, rules of differentiation (product, quotient, chain rule), application in rates of change</i><br><br></li>
+                            <li><b>Integration:</b> <i>Indefinite integrals, definite integrals, integration by substitution, integration by parts</i><br><br></li>
+                            
+                            <p><b>Description:</b>Calculus plays a critical role in optimization, especially in machine learning. Differentiation is used in gradient descent for training models. Integration helps in calculating areas under curves, which is useful in probability distributions, data science, and AI.</p>
+                        </ul>
+                        <h4>▪️Applications of Derivatives (Optimization)</h4>
+                        <ul>
+                            <li><b>Critical Points:</b> <i>Finding critical points, determining maxima and minima</i><br><br></li>
+                            <li><b>Optimization Problems:</b> <i>Profit maximization, resource allocation, error minimization in machine learning models</i><br><br></li>
+                            <li><b>Concavity and Inflection Points:</b> <i>Second derivative test</i><br><br></li>
+                            <p><b>Description:</b>Optimization is key to training AI models efficiently. By applying derivatives to find the gradient, AI algorithms adjust model parameters to minimize the loss function, improving model performance.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Linear Algebra (Months 19–22)</h3>
+                        <h4>▪️Matrices, Determinants, Eigenvectors/Eigenvalues</h4>
+                        <ul>
+                            <li><b>Matrix Operations:</b><i>Addition, subtraction, multiplication, transpose, inverse</i><br><br></li>
+                            <li><b>Determinants:</b> <i>Computing determinants, properties of determinants, Cramer's rule</i><br><br></li>
+                            <li><b>Eigenvectors and Eigenvalues:</b> <i>Finding eigenvectors and eigenvalues, diagonalization, applications in Principal Component Analysis (PCA)</i><br><br></li>
+                            <p><b>Description:</b>Linear algebra is essential for handling data in AI. Matrices are used to represent data and operations in machine learning. Eigenvectors and eigenvalues are important for dimensionality reduction, which improves computational efficiency in large datasets.</p>
+                        </ul>
+                        
+                        <h4>▪️Singular Value Decomposition (SVD)</h4>
+                        <ul>
+                            <li><b>SVD Decomposition:</b> <i>Decomposing a matrix into singular values, U, Σ, and V matrices</i><br><br></li>
+                            <li><b>Applications:</b> <i>Data compression, feature extraction, dimensionality reduction</i><br><br></li>
+                            <p><b>Description:</b>SVD is widely used in machine learning for reducing the dimensionality of large datasets, making data processing more efficient. It is also applied in image compression and recommendation systems like Netflix.</p>
+                        </ul>
+                    
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Probability & Statistics (Months 23–25)</h3>
+                        <h4>▪️Probability Theory, Random Variables, Distributions</h4>
+                        <ul>
+                            <li><b>Probability:</b><i>Basic probability, conditional probability, addition and multiplication rules, Bayes' Theorem</i><br><br></li>
+                            <li><b>Random Variables:</b> <i>Discrete and continuous random variables, expected value, variance, standard deviation</i><br><br></li>
+                            <li><b>Probability Distributions:</b> <i>Normal distribution, binomial distribution, Poisson distribution, uniform distribution</i><br><br></li>
+                            <p><b>Description:</b>Probability is essential for modeling uncertainty in machine learning. Bayesian networks use probability to make predictions. Understanding distributions is crucial for data modeling and building AI models that deal with uncertainty and incomplete data.</p>
+                        </ul>
+                    
+                        <h4>▪️Descriptive Statistics, Hypothesis Testing, Confidence Intervals</h4>
+                        <ul>
+                            <li><b>Descriptive Statistics:</b> <i>Measures of central tendency, variance, standard deviation, skewness, kurtosis</i><br><br></li>
+                            <li><b>Hypothesis Testing:</b> <i>Null hypothesis, alternative hypothesis, p-value, Type I and Type II errors</i><br><br></li>
+                            <li><b>Confidence Intervals:</b> <i>Estimation of population parameters, margin of error</i><br><br></li>
+                            <p><b>Description:</b>Descriptive statistics summarize data, making it easier to interpret. Hypothesis testing is used to validate AI models and ensure the results are statistically significant. Confidence intervals provide a range of values, helping to quantify uncertainty in predictions.</p>
+                        </ul>
+                    
+                        <h4>▪️Markov Chains, Baye's Theorem</h4>
+                        <ul>
+                            <li><b>Markov Chains:</b><i>States, transitions, transition matrix, steady-state probabilities</i><br><br></li>
+                            <li><b>Bayesian Inference:</b> <i>Prior, likelihood, posterior, and updates based on new data</i><br><br></li>
+                            
+                        <p><b>Description:</b>Markov Chains are used in AI to model systems that transition between states, such as reinforcement learning agents. Bayesian inference is applied to continuously update models with new data in probabilistic AI models.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    
+                    
+                    <li>
+                        <h3>Discrete Mathematics (Months 26–28)</h3>
+                        <h4>▪️Set Theory, Logic, Proofs</h4>
+                        
+                        <ul>
+                            <li><b>Set Operations:</b> <i>Union, intersection, complement, Cartesian product, Venn diagrams</i><br><br></li>
+                            <li><b>Logic:</b> <i>Propositional logic, truth tables, logical operators, logical equivalences</i><br><br></li>
+                            <li><b>Proof Techniques:</b> <i>Direct proofs, proof by contradiction, proof by induction</i><br><br></li>
+                            <p><b>Description:</b>Discrete mathematics helps design efficient algorithms and optimize search queries in databases. Set theory is used in data structures and database management, while logic aids in program verification and correctness.</p>
+                        </ul>
+                    
+                        <h4>▪️Combinatorics, Graph Theory, Recursion</h4>
+                        <ul>
+                            <li><b>Combinatorics:</b><i>Permutations, combinations, counting principles, the pigeonhole principle</i><br><br></li>
+                            <li><b>Graph Theory:</b> <i>Graph representations, depth-first search, breadth-first search, shortest path algorithms</i><br><br></li>
+                            <li><b>Recursion:</b> <i>Recursive functions, recursive relations, divide and conquer algorithms</i><br><br></li>
+                            <p><b>Description:</b>Graph theory is key for building networks in AI (e.g., neural networks). Recursion is a fundamental concept in AI for searching and decision-making algorithms like those used in decision trees and game theory.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Optimization and Advanced Topics for AI (Months 29–36)</h3>
+                        <h4>▪️Convex Optimization</h4>
+                        <ul>
+                            <li><b>Convex Sets: </b><i>Convexity, properties of convex sets</i><br><br></li>
+                            <li><b>Convex Functions:</b> <i>Properties, optimization of convex functions</i><br><br></li>
+                            <li><b>Applications in Machine Learning:</b> <i>Minimizing loss functions, support vector machines (SVM)</i><br><br></li>
+                            
+                        <p><b>Description:</b>Convex optimization plays a central role in machine learning and deep learning for efficiently minimizing loss functions. It is used to train models that generalize well to unseen data.</p>
+                        </ul>
+                        <h4>▪️Stochastic Processes, Simulated Annealing, Genetic Algorithms</h4>
+                        <ul>
+                            <li><b>Markov Decision Processes (MDPs):</b> <i>States, actions, rewards, policies, value iteration</i><br><br></li>
+                            <li><b>Simulated Annealing:</b> <i>Randomized search techniques, cooling schedules</i><br><br></li>
+                            <li><b>Genetic Algorithms:</b> <i>Selection, crossover, mutation, evolutionary strategies</i><br><br></li>
+                            <p><b>Description:</b>Stochastic processes help in modeling decision-making over time, especially in reinforcement learning. Simulated Annealing and Genetic Algorithms are used for global optimization tasks in AI.</p>
+                        </ul>
+                    
+                        <h4>▪️Game Theory</h4>
+                        <ul>
+                            <li><b>Nash Equilibrium:</b><i>Concepts of dominant strategies, pure and mixed strategies</i></li>
+                            <li><b>Zero-Sum Games:</b><i>Strategy for optimization, applications in multi-agent systems</i></li>
+                            <p><b>Description:</b>Game theory helps AI agents make optimal decisions in multi-agent environments. It is essential for building intelligent systems in adversarial settings, like in reinforcement learning and strategy games.</p>
+                        </ul>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h3>Advanced Topics in AI Development</h3>
+                        <h4>▪️Neural Networks, Deep Learning</h4>
+                        <ul>
+                            <li><b>Architecture:</b> <i>Perceptrons, multi-layer networks, activation functions (ReLU, sigmoid, tanh)</i><br><br></li>
+                            <li><b>Backpropagation:</b> <i>Training deep networks, loss functions, gradient descent</i><br><br></li>
+                            <li><b>Deep Learning Models:</b> <i>Convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers</i><br><br></li>
+                            <p><b>Description:</b>Deep learning models are fundamental for applications such as image recognition, NLP, and autonomous systems. Backpropagation and optimization algorithms allow neural networks to learn from data and improve over time.</p>
+                        </ul>
+                    
+                        <h4>▪️Support Vector Machines (SVM), Clustering Algorithms</h4>
+                        <ul>
+                            <li><b>SVM:</b><i>Hyperplanes, kernels, margin maximization</i><br><br></li>
+                            <li><b>Clustering:</b> <i>K-means, DBSCAN, hierarchical clustering</i><br><br></li>
+                    
+                        <p><b>Description:</b>SVMs are powerful classifiers, widely used in pattern recognition tasks. Clustering algorithms are applied in unsupervised learning to group similar data points together in applications like customer segmentation.</p>
+                        </ul>
+                    
+                        <h4>▪️Reinforcement Learning (RL)</h4>
+                        <ul>
+                            <li><b>Q-learning:</b> <i>Value functions, action-value functions, exploration vs exploitation</i><br><br></li>
+                            <li><b>Policy Gradients:</b> <i>Optimizing policy directly, stochastic gradient ascent</i><br><br></li>
+                            <li><b>Deep Q-Networks (DQN):</b> <i>Using deep learning to approximate Q-values</i><br><br></li>
+                        <p><b>Description</b>Reinforcement learning enables agents to learn optimal behaviors by interacting with an environment. This is widely used in robotics, self-driving cars, and AI game agents.</p>
+                        </ul>
+                        <hr/>
+                    </li>
+                    
+                    </ol>
+                     </p>
+            </div>
+
+            <div id="progress" class="hidden">
+                <h4>Progress:</h4>
+                <p>Completed: Arithmetic and Algebra Basics. Pending: Trigonometry, Calculus, and Linear Algebra.</p>
+            </div>
+
+            <div id="notes">
+                <h4>Notes:</h4>
+                <p>Mathematics includes a wide range of topics, starting from basic operations to complex theories and problem-solving techniques...</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
 
 </body>
 </html>
