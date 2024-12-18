@@ -9,43 +9,75 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            width: 100%;
+            background-color: #1C1C1C; /* Dark Charcoal Background */
         }
+
         header {
-            background-color: #333;
-            color: white;
+            background-color: #121212; /* Very Dark Charcoal */
+            color: #B0B0B0; /* Light Gray for contrast */
             padding: 10px;
             text-align: center;
         }
+
         nav {
-            background-color: #444;
+            background-color: #333333; /* Dark Charcoal */
             overflow: hidden;
             text-align: center;
         }
+
         nav a {
-            color: white;
+            color: #B0B0B0; /* Light Gray */
             padding: 14px 20px;
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
             display: inline-block;
         }
+
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
         }
+
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
+            padding: 10px;
         }
+
         .note {
-            background-color: white;
-            padding: 15px;
+            background-color: #2C2C2C; /* Dark Charcoal */
+            padding: 30px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 30px;
+            color: #B0B0B0; /* Light Gray */
         }
+
         .note h3 {
             margin-top: 0;
+            color: #F1F1F1; /* Off-White for titles */
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
+        }
+
+        .btn:hover {
+            background-color: #333333; /* Dark Charcoal */
+            color: #B0B0B0; /* Light Gray */
+        
         }
     </style>
 </head>
@@ -63,23 +95,42 @@
         <a href="physics.html">Physics</a>
         <a href="biology.html">Biology</a>
         <a href="chemistry.html">Chemistry</a>
-        
     </nav>
 
     <div class="container">
         <div class="note">
-            <h3>Introduction to Psychology</h3>
-            <p>Psychology is the scientific study of behavior and mental processes. It covers a wide range of topics including perception, cognition, emotions, and behavior...</p>
-        </div>
-        <div class="note">
-            <h3>Psychological Theories</h3>
-            <p>There are various theories in psychology, including behaviorism, cognitive psychology, humanistic psychology, and psychoanalysis...</p>
-        </div>
-        <div class="note">
-            <h3>Research Methods in Psychology</h3>
-            <p>Research in psychology involves various methods like experiments, surveys, case studies, and observational studies to understand behavior...</p>
+            <h3>Psychology Concepts</h3>
+            <button class="btn" onclick="toggleVisibility('roadmap')">Toggle Roadmap</button>
+            <button class="btn" onclick="toggleVisibility('progress')">Toggle Progress</button>
+            <button class="btn" onclick="toggleVisibility('notes')">Toggle Notes</button>
+
+            <div id="roadmap" class="hidden">
+                <h4>Roadmap:</h4>
+                <p>Start with understanding the basics of psychology, then explore various topics like cognitive processes, emotional regulation, and abnormal psychology...</p>
+            </div>
+
+            <div id="progress" class="hidden">
+                <h4>Progress:</h4>
+                <p>Completed: Basic concepts of psychology, mental processes, and behavior. Pending: Advanced topics in cognitive psychology, behaviorism, and therapy approaches.</p>
+            </div>
+
+            <div id="notes" class="hidden">
+                <h4>Notes:</h4>
+                <p>Psychology is a broad field encompassing theories, research methods, and applications in understanding human behavior. From behavioral psychology to cognitive processes, the subject spans various schools of thought.</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
 
 </body>
 </html>

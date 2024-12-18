@@ -9,43 +9,75 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            width: 100%;
+            background-color: #1C1C1C; /* Dark Charcoal Background */
         }
+
         header {
-            background-color: #333;
-            color: white;
+            background-color: #121212; /* Very Dark Charcoal */
+            color: #B0B0B0; /* Light Gray for contrast */
             padding: 10px;
             text-align: center;
         }
+
         nav {
-            background-color: #444;
+            background-color: #333333; /* Dark Charcoal */
             overflow: hidden;
             text-align: center;
         }
+
         nav a {
-            color: white;
+            color: #B0B0B0; /* Light Gray */
             padding: 14px 20px;
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
             display: inline-block;
         }
+
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
         }
+
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
+            padding: 10px;
         }
+
         .note {
-            background-color: white;
-            padding: 15px;
+            background-color: #2C2C2C; /* Dark Charcoal */
+            padding: 30px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 30px;
+            color: #B0B0B0; /* Light Gray */
         }
+
         .note h3 {
             margin-top: 0;
+            color: #F1F1F1; /* Off-White for titles */
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
+        }
+
+        .btn:hover {
+            background-color: #333333; /* Dark Charcoal */
+            color: #B0B0B0; /* Light Gray */
+        
         }
     </style>
 </head>
@@ -68,18 +100,1739 @@
 
     <div class="container">
         <div class="note">
-            <h3>Introduction to Python</h3>
-            <p>Python is an easy-to-learn, high-level programming language. It is used for web development, automation, data science, and more...</p>
-        </div>
-        <div class="note">
-            <h3>Object-Oriented Programming (OOP)</h3>
-            <p>OOP is a programming paradigm based on objects and classes. Key concepts include inheritance, polymorphism, encapsulation, and abstraction...</p>
-        </div>
-        <div class="note">
-            <h3>Data Structures and Algorithms</h3>
-            <p>Data structures include arrays, lists, stacks, and queues. Algorithms are step-by-step procedures for solving problems efficiently...</p>
+            <h3>Programming Concepts</h3>
+            <button class="btn" onclick="toggleVisibility('roadmap')">Toggle Roadmap</button>
+            <button class="btn" onclick="toggleVisibility('progress')">Toggle Progress</button>
+            <button class="btn" onclick="toggleVisibility('notes')">Toggle Notes</button>
+
+            <div id="roadmap" class="hidden">
+                <h4>Roadmap:</h4>
+                <p>
+<h2>1.Programming Fundamentals Roadmap (Software Development)</h2>
+
+<ol><i>
+    <li>
+        <strong>Introduction to Programming</strong>
+        <ul>
+            <li>What is Programming?
+                <ul>
+                    <li>Introduction to software development and its importance</li>
+                    <li>Programming paradigms (Procedural, Object-Oriented, Functional, etc.)</li>
+                </ul>
+            </li>
+            <li>Setting Up Development Environment
+                <ul>
+                    <li>Installing a code editor (VS Code, PyCharm, Sublime Text, etc.)</li>
+                    <li>Installing compilers (Python, C, Java, etc.)</li>
+                    <li>Using IDEs (Integrated Development Environments)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Basic Programming Concepts</strong>
+        <ul>
+            <li>Syntax and Structure
+                <ul>
+                    <li>Introduction to programming syntax (statements, keywords, operators)</li>
+                    <li>Writing and running your first program (e.g., Hello World)</li>
+                </ul>
+            </li>
+            <li>Variables and Data Types
+                <ul>
+                    <li>Understanding variables, constants, and data types (int, float, char, string)</li>
+                    <li>Type conversion and casting</li>
+                </ul>
+            </li>
+            <li>Operators
+                <ul>
+                    <li>Arithmetic operators, comparison operators, logical operators, assignment operators</li>
+                </ul>
+            </li>
+            <li>Input/Output
+                <ul>
+                    <li>Taking user input and printing output (input() in Python, scanf/printf in C, etc.)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Control Flow (Conditionals & Loops)</strong>
+        <ul>
+            <li>Conditionals
+                <ul>
+                    <li>If-else, else-if chains, switch-case (in languages that support it)</li>
+                    <li>Nested conditionals</li>
+                </ul>
+            </li>
+            <li>Loops
+                <ul>
+                    <li>For loop, while loop, do-while loop</li>
+                    <li>Loop control (break, continue, etc.)</li>
+                    <li>Nested loops</li>
+                </ul>
+            </li>
+            <li>Pattern Printing
+                <ul>
+                    <li>Printing different patterns (triangle, square, diamond, etc.)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Functions and Modular Programming</strong>
+        <ul>
+            <li>Functions
+                <ul>
+                    <li>Defining functions, function parameters, and return values</li>
+                    <li>Scope (local vs global variables)</li>
+                    <li>Recursion</li>
+                </ul>
+            </li>
+            <li>Modular Programming
+                <ul>
+                    <li>Breaking programs into smaller functions for better readability and maintainability<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Data Structures</strong>
+        <ul>
+            <li>Arrays (or Lists in Python)
+                <ul>
+                    <li>Declaring and initializing arrays</li>
+                    <li>Traversing, adding, and deleting elements</li>
+                    <li>Multi-dimensional arrays</li>
+                </ul>
+            </li>
+            <li>Strings
+                <ul>
+                    <li>String operations (concatenation, slicing, searching, etc.)</li>
+                </ul>
+            </li>
+            <li>Linked Lists
+                <ul>
+                    <li>Single, doubly, and circular linked lists</li>
+                    <li>Insertion, deletion, and traversal</li>
+                </ul>
+            </li>
+            <li>Stacks and Queues
+                <ul>
+                    <li>Stack operations (push, pop, peek)</li>
+                    <li>Queue operations (enqueue, dequeue)</li>
+                </ul>
+            </li>
+            <li>Hash Tables (Dictionaries in Python)
+                <ul>
+                    <li>Understanding key-value pairs</li>
+                    <li>Collision resolution techniques</li>
+                </ul>
+            </li>
+            <li>Trees
+                <ul>
+                    <li>Binary trees, binary search trees (BST), AVL trees</li>
+                    <li>Tree traversal techniques (in-order, pre-order, post-order)</li>
+                </ul>
+            </li>
+            <li>Graphs
+                <ul>
+                    <li>Representation (adjacency matrix, adjacency list)</li>
+                    <li>Graph traversal (BFS, DFS)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Algorithms</strong>
+        <ul>
+            <li>Sorting Algorithms
+                <ul>
+                    <li>Bubble sort, selection sort, insertion sort</li>
+                    <li>Merge sort, quicksort, heap sort</li>
+                    <li>Time complexity and space complexity</li>
+                </ul>
+            </li>
+            <li>Searching Algorithms
+                <ul>
+                    <li>Linear search, binary search</li>
+                </ul>
+            </li>
+            <li>Recursion and Backtracking
+                <ul>
+                    <li>Understanding recursion</li>
+                    <li>Solving problems using backtracking (e.g., N-Queens, Sudoku)</li>
+                </ul>
+            </li>
+            <li>Dynamic Programming
+                <ul>
+                    <li>Problem-solving approach using dynamic programming (e.g., Fibonacci series, knapsack problem)</li>
+                </ul>
+            </li>
+            <li>Greedy Algorithms
+                <ul>
+                    <li>Understanding greedy problem-solving approach<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Object-Oriented Programming (OOP)</strong>
+        <ul>
+            <li>Classes and Objects
+                <ul>
+                    <li>Understanding classes, objects, and methods</li>
+                </ul>
+            </li>
+            <li>Inheritance
+                <ul>
+                    <li>Types of inheritance (single, multiple, multilevel)</li>
+                    <li>Superclass and subclass</li>
+                </ul>
+            </li>
+            <li>Polymorphism
+                <ul>
+                    <li>Method overloading and overriding</li>
+                    <li>Operator overloading</li>
+                </ul>
+            </li>
+            <li>Encapsulation
+                <ul>
+                    <li>Access modifiers (private, protected, public)</li>
+                    <li>Getter and setter methods</li>
+                </ul>
+            </li>
+            <li>Abstraction
+                <ul>
+                    <li>Abstract classes and interfaces</li>
+                    <li>Hiding implementation details</li>
+                </ul>
+            </li>
+            <li>Magic Methods (Python)
+                <ul>
+                    <li>__init__, __str__, __repr__, __add__, etc.<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Error Handling and Debugging</strong>
+        <ul>
+            <li>Error Types
+                <ul>
+                    <li>Syntax errors, runtime errors, logical errors</li>
+                </ul>
+            </li>
+            <li>Exception Handling
+                <ul>
+                    <li>Try-except blocks (Python), try-catch blocks (Java, C#)</li>
+                </ul>
+            </li>
+            <li>Debugging Techniques
+                <ul>
+                    <li>Using breakpoints</li>
+                    <li>Logging</li>
+                    <li>Analyzing stack traces<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>File Handling</strong>
+        <ul>
+            <li>Reading and Writing Files
+                <ul>
+                    <li>File input/output (read, write, append)</li>
+                    <li>Handling different file formats (text, CSV, JSON)</li>
+                </ul>
+            </li>
+            <li>Working with Directories
+                <ul>
+                    <li>Creating, renaming, and deleting files and directories</li>
+                </ul>
+            </li>
+            <li>File Operations
+                <ul>
+                    <li>File modes, file pointer manipulation<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Advanced Concepts</strong>
+        <ul>
+            <li>Concurrency and Parallelism
+                <ul>
+                    <li>Threads and processes</li>
+                    <li>Synchronization techniques (mutex, semaphore)</li>
+                </ul>
+            </li>
+            <li>Networking
+                <ul>
+                    <li>Introduction to sockets and protocols (TCP/IP, HTTP)</li>
+                    <li>Creating client-server applications</li>
+                </ul>
+            </li>
+            <li>Databases
+                <ul>
+                    <li>Relational databases and SQL</li>
+                    <li>CRUD operations (Create, Read, Update, Delete)</li>
+                    <li>NoSQL databases (MongoDB, Redis)</li>
+                </ul>
+            </li>
+            <li>Design Patterns
+                <ul>
+                    <li>Singleton, Factory, Observer, Strategy, etc.</li>
+                </ul>
+            </li>
+            <li>Testing
+                <ul>
+                    <li>Unit testing and test-driven development (TDD)</li>
+                    <li>Debugging tools</li>
+                </ul>
+            </li>
+            <li>Version Control
+                <ul>
+                    <li>Git basics (clone, commit, push, pull)</li>
+                    <li>Branching, merging, resolving conflicts</li>
+                    <li>Using GitHub or GitLab for code collaboration<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Software Development Practices</strong>
+        <ul>
+            <li>Agile Methodology
+                <ul>
+                    <li>Scrum, Kanban</li>
+                    <li>Sprint planning, stand-ups, and retrospectives</li>
+                </ul>
+            </li>
+            <li>Code Reviews
+                <ul>
+                    <li>Reviewing and refactoring code</li>
+                    <li>Best practices for clean code</li>
+                </ul>
+            </li>
+            <li>Documentation
+                <ul>
+                    <li>Writing effective documentation for software<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Building Projects</strong>
+        <ul>
+            <li>Small Projects
+                <ul>
+                    <li>Calculator, to-do list, basic CRUD applications</li>
+                </ul>
+            </li>
+            <li>Intermediate Projects
+                <ul>
+                    <li>Library system, chat application, weather app</li>
+                </ul>
+            </li>
+            <li>Advanced Projects
+                <ul>
+                    <li>Web applications (front-end + back-end)</li>
+                    <li>E-commerce websites, social media applications<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>Going Beyond</strong>
+        <ul>
+            <li>Exploring Frameworks
+                <ul>
+                    <li>Web frameworks: Flask/Django (Python), Express.js (Node.js)</li>
+                    <li>Frontend frameworks: React.js, Angular, Vue.js</li>
+                </ul>
+            </li>
+            <li>AI and Machine Learning Basics
+                <ul>
+                    <li>Introduction to AI/ML concepts (supervised learning, unsupervised learning)</li>
+                    <li>Libraries: TensorFlow, scikit-learn, PyTorch</li>
+                </ul>
+            </li>
+            <li>Cloud Computing
+                <ul>
+                    <li>AWS, Azure, or Google Cloud basics</li>
+                </ul>
+            </li>
+            <li>DevOps Basics
+                <ul>
+                    <li>Introduction to CI/CD pipelines</li>
+                    <li>Containerization (Docker)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</i></ol>
+<hr/>
+
+<h2>2.Operating Systems Basics Roadmap</h2>
+
+<ol><i>
+    <li><strong>Introduction to Operating Systems</strong>
+        <ul>
+            <li>What is an Operating System?
+                <ul>
+                    <li>Definition, role, and basic functions (management of hardware, software, and resources)</li>
+                    <li>Types of Operating Systems: Batch, Time-sharing, Distributed, Embedded, Real-time, etc.</li>
+                    <li>Operating System Structures: Monolithic, Microkernel, Layered, etc.<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Basic OS Components and Concepts</strong>
+        <ul>
+            <li>Kernel
+                <ul>
+                    <li>Definition, functions, types (Monolithic Kernel, Microkernel)</li>
+                    <li>Kernel vs User Mode</li>
+                </ul>
+            </li>
+            <li>System Calls
+                <ul>
+                    <li>What are system calls, how they work</li>
+                    <li>Examples of system calls</li>
+                </ul>
+            </li>
+            <li>Processes
+                <ul>
+                    <li>What is a process, Process Control Block (PCB)</li>
+                    <li>Process States (New, Ready, Running, Waiting, Terminated)</li>
+                </ul>
+            </li>
+            <li>Memory Management Basics
+                <ul>
+                    <li>Role of memory in OS</li>
+                    <li>Types of memory: RAM, Cache, Virtual Memory</li>
+                </ul>
+            </li>
+            <li>File Systems
+                <ul>
+                    <li>File and Directory structures</li>
+                    <li>File Operations: Create, Delete, Read, Write, Append</li>
+                    <li>Types of File Systems: FAT, NTFS, ext4, etc.<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Process Management</strong>
+        <ul>
+            <li>Process Scheduling
+                <ul>
+                    <li>Scheduling Algorithms: First Come First Serve (FCFS), Shortest Job Next (SJN), Round Robin, Priority Scheduling, etc.</li>
+                    <li>Context Switching</li>
+                </ul>
+            </li>
+            <li>Inter-process Communication (IPC)
+                <ul>
+                    <li>Pipes, Message Queues, Shared Memory, Semaphores</li>
+                </ul>
+            </li>
+            <li>Process Synchronization
+                <ul>
+                    <li>Race conditions, Critical Section problem</li>
+                    <li>Locks, Semaphores, Mutexes, Monitors, and Condition Variables</li>
+                    <li>Classical problems (Producer-Consumer, Reader-Writer, Dining Philosophers)</li>
+                </ul>
+            </li>
+            <li>Deadlock
+                <ul>
+                    <li>Deadlock Conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait</li>
+                    <li>Deadlock Prevention, Avoidance, Detection, and Recovery<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Memory Management</strong>
+        <ul>
+            <li>Memory Hierarchy
+                <ul>
+                    <li>Cache memory, RAM, Virtual Memory</li>
+                </ul>
+            </li>
+            <li>Contiguous Memory Allocation
+                <ul>
+                    <li>Single, multiple partitions, and fragmentation</li>
+                </ul>
+            </li>
+            <li>Paging and Segmentation
+                <ul>
+                    <li>Paging concepts: page tables, virtual memory</li>
+                    <li>Segmentation: logical view of memory</li>
+                </ul>
+            </li>
+            <li>Virtual Memory Management
+                <ul>
+                    <li>Demand paging, page faults, page replacement algorithms (FIFO, LRU, Optimal, etc.)</li>
+                </ul>
+            </li>
+            <li>Memory Allocation Strategies
+                <ul>
+                    <li>First Fit, Best Fit, Worst Fit<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>File Systems Management</strong>
+        <ul>
+            <li>File Organization
+                <ul>
+                    <li>File Attributes, File Access Methods (Sequential, Direct)</li>
+                </ul>
+            </li>
+            <li>Directory Structure
+                <ul>
+                    <li>Single-level, Two-level, Hierarchical, Networked</li>
+                </ul>
+            </li>
+            <li>Disk Management
+                <ul>
+                    <li>Disk Scheduling Algorithms: FCFS, SSTF, SCAN, C-SCAN</li>
+                    <li>Disk Defragmentation<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Input/Output Management</strong>
+        <ul>
+            <li>I/O Devices and Controllers
+                <ul>
+                    <li>I/O Devices, Interrupts, I/O System Calls</li>
+                </ul>
+            </li>
+            <li>I/O Scheduling
+                <ul>
+                    <li>Scheduling algorithms and disk scheduling</li>
+                </ul>
+            </li>
+            <li>Buffering, Caching, Spooling
+                <ul>
+                    <li>I/O buffering, write-through, write-back caches</li>
+                </ul>
+            </li>
+            <li>Direct Memory Access (DMA)<br><br></li>
+        </ul>
+    </li>
+
+    <li><strong>Security and Protection</strong>
+        <ul>
+            <li>Security vs Protection
+                <ul>
+                    <li>Difference between security and protection</li>
+                </ul>
+            </li>
+            <li>Authentication and Authorization
+                <ul>
+                    <li>Methods of authentication (passwords, biometrics)</li>
+                    <li>Access Control Lists (ACL), Role-Based Access Control (RBAC)</li>
+                </ul>
+            </li>
+            <li>Encryption
+                <ul>
+                    <li>Symmetric and Asymmetric encryption</li>
+                </ul>
+            </li>
+            <li>Virus and Malware Protection
+                <ul>
+                    <li>Anti-virus, Firewalls, Security protocols (SSL/TLS)<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Advanced Topics</strong>
+        <ul>
+            <li>Distributed Systems
+                <ul>
+                    <li>Concepts: Distributed OS, Client-Server Model, Remote Procedure Calls (RPC)</li>
+                    <li>Coordination in distributed systems (Time synchronization, Mutual Exclusion)</li>
+                </ul>
+            </li>
+            <li>Real-time Operating Systems (RTOS)
+                <ul>
+                    <li>Characteristics of RTOS, Scheduling for real-time systems</li>
+                </ul>
+            </li>
+            <li>Virtualization
+                <ul>
+                    <li>Hypervisor types (Type 1 and Type 2)</li>
+                    <li>Virtual machines, Containers (Docker, Kubernetes)</li>
+                </ul>
+            </li>
+            <li>Cloud Computing
+                <ul>
+                    <li>Cloud OS, Virtualized environments, Cloud storage</li>
+                </ul>
+            </li>
+            <li>Operating System Security
+                <ul>
+                    <li>Buffer overflow attacks, OS hardening, Kernel security<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Hands-on Projects and Practice</strong>
+        <ul>
+            <li>Simulate OS Concepts
+                <ul>
+                    <li>Build a simple Shell (Command Line Interface)</li>
+                    <li>Simulate a basic CPU Scheduler (Round Robin, FCFS)</li>
+                    <li>Implement a File System (Basic File Creation, Deletion, and Access)</li>
+                    <li>Create a simple Memory Manager (Page Replacement Algorithm)</li>
+                </ul>
+            </li>
+            <li>Contribute to Open Source OS Projects
+                <ul>
+                    <li>Study and contribute to projects like Linux, Minix, etc.<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+
+    <li><strong>Resources and References</strong>
+        <ul>
+            <li>Books
+                <ul>
+                    <li>"Operating System Concepts" by Silberschatz, Galvin, and Gagne</li>
+                    <li>"Modern Operating Systems" by Andrew S. Tanenbaum</li>
+                </ul>
+            </li>
+            <li>Online Courses
+                <ul>
+                    <li>Coursera: Operating Systems by UC Berkeley</li>
+                    <li>edX: Operating Systems by MIT</li>
+                </ul>
+            </li>
+            <li>Practice Platforms
+                <ul>
+                    <li>LeetCode, GeeksforGeeks, HackerRank for OS-related problems<br><br></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</i></ol>
+<hr/>
+
+
+
+<h2>3.Basic Hardware Understanding Roadmap</h2>
+
+<h3><i>Stage 1: Fundamentals of Computer Hardware</i></h3>
+<ul><i>
+    <li>
+        <strong>Introduction to Computer Hardware</strong>
+        <ul>
+            <li>What is hardware?</li>
+            <li>Difference between hardware and software</li>
+            <li>Components of a computer system</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Hardware Basics</strong>
+        <ul>
+            <li>Input devices (keyboard, mouse, etc.)</li>
+            <li>Output devices (monitor, printer, etc.)</li>
+            <li>Storage devices (HDD, SSD, optical drives)</li>
+            <li>Internal components (motherboard, CPU, RAM, power supply)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Peripheral Devices</strong>
+        <ul>
+            <li>External storage (USB drives, external HDD/SSD)</li>
+            <li>Networking devices (modem, router, Wi-Fi adapters)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Understanding Computer Ports and Connectors</strong>
+        <ul>
+            <li>USB, HDMI, Ethernet, VGA, Thunderbolt, etc.</li>
+            <li>Power connectors (SMPS cables, motherboard connectors)</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Stage 2: Internal Components and How They Work</h3>
+<ul>
+    <li>
+        <strong>Motherboard</strong>
+        <ul>
+            <li>Layout and components: chipset, sockets, slots, and ports</li>
+            <li>BIOS/UEFI basics</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Processor (CPU)</strong>
+        <ul>
+            <li>Functions of the CPU</li>
+            <li>Core, threads, clock speed</li>
+            <li>Understanding architectures (x86, ARM)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Memory (RAM)</strong>
+        <ul>
+            <li>Types: DDR, DDR2, DDR3, DDR4, DDR5</li>
+            <li>Volatile vs. non-volatile memory</li>
+            <li>How RAM impacts performance</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Storage Devices</strong>
+        <ul>
+            <li>HDD vs. SSD vs. NVMe</li>
+            <li>RAID (Redundant Array of Independent Disks)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Graphics Processing Unit (GPU)</strong>
+        <ul>
+            <li>Integrated vs. dedicated GPU</li>
+            <li>How GPUs are used for gaming, rendering, and AI</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Power Supply Unit (PSU)</strong>
+        <ul>
+            <li>Wattage and efficiency ratings (80+ Bronze, Silver, Gold)</li>
+            <li>Choosing the right PSU for a system</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Cooling Systems</strong>
+        <ul>
+            <li>Types: air cooling, liquid cooling</li>
+            <li>Thermal paste application</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Stage 3: Advanced Hardware Concepts</h3>
+<ul>
+    <li>
+        <strong>Networking Hardware</strong>
+        <ul>
+            <li>Ethernet cards, switches, routers, and firewalls</li>
+            <li>Network Attached Storage (NAS)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Server Hardware</strong>
+        <ul>
+            <li>Server CPUs (Xeon, EPYC)</li>
+            <li>Server-grade motherboards and ECC RAM</li>
+            <li>Storage solutions for servers</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Embedded Systems</strong>
+        <ul>
+            <li>Microcontrollers (Arduino, Raspberry Pi)</li>
+            <li>Embedded processors and their use in IoT</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Mobile and Portable Hardware</strong>
+        <ul>
+            <li>Differences between desktop and mobile hardware</li>
+            <li>Hardware in laptops, tablets, and smartphones</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Stage 4: Maintenance and Troubleshooting</h3>
+<ul>
+    <li>
+        <strong>Assembling a PC</strong>
+        <ul>
+            <li>Step-by-step guide to assembling components</li>
+            <li>Testing the assembled system</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Diagnosing Hardware Issues</strong>
+        <ul>
+            <li>Troubleshooting common issues (no boot, no display, overheating)</li>
+            <li>Tools for diagnosis: multimeter, POST cards, diagnostic software</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Hardware Upgrades</strong>
+        <ul>
+            <li>When and how to upgrade: CPU, RAM, GPU, storage</li>
+            <li>Compatibility considerations</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Preventive Maintenance</strong>
+        <ul>
+            <li>Cleaning hardware components</li>
+            <li>Managing cables for airflow</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Stage 5: Specialized Topics</h3>
+<ul>
+    <li>
+        <strong>Overclocking</strong>
+        <ul>
+            <li>What is overclocking?</li>
+            <li>Risks and benefits</li>
+            <li>Tools for safe overclocking</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Virtualization</strong>
+        <ul>
+            <li>Hardware support for virtualization (Intel VT-x, AMD-V)</li>
+            <li>Setting up virtual machines</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Benchmarks and Performance Testing</strong>
+        <ul>
+            <li>Benchmarking tools (Cinebench, 3DMark)</li>
+            <li>Interpreting benchmark results</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Advanced Networking</strong>
+        <ul>
+            <li>Building and maintaining small server farms</li>
+            <li>Advanced NAS configurations</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Emerging Technologies</strong>
+        <ul>
+            <li>Quantum computing hardware basics</li>
+            <li>AI and ML accelerators (Tensor cores, TPUs)</li>
+        </ul>
+    </li>
+</i></ul>
+    <hr/>
+
+
+    <h2>4.Networking Roadmap</h2>
+
+    <h3><i>Stage 1: Basics of Networking</i></h3>
+    <ul><i>
+        <li>Introduction to Networking
+            <ul>
+                <li>What is a network?</li>
+                <li>Types of networks: LAN, WAN, MAN, PAN</li>
+                <li>Network topologies: Star, Bus, Ring, Mesh</li>
+                <li>Importance and applications of networking</li>
+            </ul>
+        </li>
+        <li>Networking Devices
+            <ul>
+                <li>Switches, Routers, Modems, Hubs, Access Points</li>
+                <li>Network Interface Cards (NIC)</li>
+                <li>Firewalls and their role in security</li>
+            </ul>
+        </li>
+        <li>Network Models
+            <ul>
+                <li>OSI Model (7 Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application)</li>
+                <li>TCP/IP Model</li>
+            </ul>
+        </li>
+        <li>Network Communication Basics
+            <ul>
+                <li>Data transmission: Analog vs. Digital</li>
+                <li>Packet Switching vs. Circuit Switching</li>
+                <li>Protocols: TCP, UDP, IP</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Stage 2: Intermediate Networking</h3>
+    <ul>
+        <li>IP Addressing
+            <ul>
+                <li>IPv4 and IPv6</li>
+                <li>Subnetting and CIDR (Classless Inter-Domain Routing)</li>
+                <li>Public vs. Private IPs</li>
+                <li>DHCP (Dynamic Host Configuration Protocol)</li>
+            </ul>
+        </li>
+        <li>DNS (Domain Name System)
+            <ul>
+                <li>How DNS works</li>
+                <li>DNS Records: A, AAAA, CNAME, MX, PTR</li>
+                <li>Common DNS issues and troubleshooting</li>
+            </ul>
+        </li>
+        <li>Networking Protocols
+            <ul>
+                <li>HTTP/HTTPS</li>
+                <li>FTP/SFTP</li>
+                <li>SMTP/POP3/IMAP</li>
+                <li>SNMP (Simple Network Management Protocol)</li>
+                <li>ICMP (Internet Control Message Protocol)</li>
+            </ul>
+        </li>
+        <li>Networking Tools
+            <ul>
+                <li>Ping, Traceroute</li>
+                <li>Wireshark (Packet analysis)</li>
+                <li>Netstat, ipconfig/ifconfig</li>
+            </ul>
+        </li>
+        <li>Basic Security Concepts
+            <ul>
+                <li>Firewalls and VPNs</li>
+                <li>Basic encryption: SSL/TLS</li>
+                <li>Network Address Translation (NAT)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Stage 3: Advanced Networking</h3>
+    <ul>
+        <li>Routing and Switching
+            <ul>
+                <li>Static vs. Dynamic Routing</li>
+                <li>Routing Protocols: RIP, OSPF, BGP</li>
+                <li>VLANs (Virtual LANs)</li>
+                <li>Spanning Tree Protocol (STP)</li>
+            </ul>
+        </li>
+        <li>Wireless Networking
+            <ul>
+                <li>Wi-Fi standards: 802.11a/b/g/n/ac/ax</li>
+                <li>Wireless Security: WPA, WPA2, WPA3</li>
+                <li>SSIDs and Channel Selection</li>
+            </ul>
+        </li>
+        <li>Network Security
+            <ul>
+                <li>Intrusion Detection and Prevention Systems (IDS/IPS)</li>
+                <li>Advanced encryption techniques</li>
+                <li>Firewalls (Next-gen firewalls)</li>
+                <li>Penetration testing tools</li>
+            </ul>
+        </li>
+        <li>Network Virtualization
+            <ul>
+                <li>Virtual LANs (VLANs)</li>
+                <li>Software-Defined Networking (SDN)</li>
+                <li>Network Functions Virtualization (NFV)</li>
+            </ul>
+        </li>
+        <li>Cloud Networking
+            <ul>
+                <li>Cloud Service Models: IaaS, PaaS, SaaS</li>
+                <li>Virtual Private Cloud (VPC)</li>
+                <li>Load Balancers</li>
+                <li>CDN (Content Delivery Network)</li>
+            </ul>
+        </li>
+        <li>Advanced Protocols
+            <ul>
+                <li>MPLS (Multi-Protocol Label Switching)</li>
+                <li>GRE (Generic Routing Encapsulation)</li>
+                <li>QoS (Quality of Service)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Stage 4: Specialized Topics</h3>
+    <ul>
+        <li>Network Monitoring and Troubleshooting
+            <ul>
+                <li>Tools: Nagios, SolarWinds, PRTG</li>
+                <li>Logs analysis</li>
+                <li>Performance monitoring</li>
+            </ul>
+        </li>
+        <li>IoT Networking
+            <ul>
+                <li>IoT Protocols: MQTT, CoAP</li>
+                <li>Low-power networking: Zigbee, LoRaWAN</li>
+            </ul>
+        </li>
+        <li>IPv6 Advanced Concepts
+            <ul>
+                <li>Dual-stack implementation</li>
+                <li>Transition mechanisms</li>
+            </ul>
+        </li>
+        <li>Automation in Networking
+            <ul>
+                <li>Tools: Ansible, Puppet, Chef</li>
+                <li>Network automation scripting</li>
+            </ul>
+        </li>
+        <li>Cybersecurity Integration
+            <ul>
+                <li>Zero Trust Networking</li>
+                <li>Threat hunting in networks</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Practical Projects</h3>
+    <ul>
+        <li>Set up a home network with VLANs</li>
+        <li>Configure a virtual private network (VPN)</li>
+        <li>Build a simple web server and test routing</li>
+        <li>Implement a small office network with security features</li>
+    </ul>
+
+    <h3>Certifications</h3>
+    <ul>
+        <li><strong>Beginner:</strong> CompTIA Network+</li>
+        <li><strong>Intermediate:</strong> Cisco CCNA (Cisco Certified Network Associate)</li>
+        <li><strong>Advanced:</strong>
+            <ul>
+                <li>CCNP (Cisco Certified Network Professional)</li>
+                <li>AWS Certified Advanced Networking</li>
+                <li>Palo Alto PCNSE</li>
+            </ul>
+        </li>
+    </i></ul>
+    <hr/>
+
+
+
+    <h2>5.Cloud Computing</h2>
+
+    <ul><i>
+        <li>
+            <h3>Phase 1: Basics of Cloud Computing</h3>
+            <ul>
+                <li>
+                    <h4>1. Introduction to Cloud Computing</h4>
+                    <ul>
+                        <li>Definition and Characteristics (On-demand, Scalability, Pay-as-you-go)</li>
+                        <li>History and Evolution of Cloud Computing</li>
+                        <li>Advantages and Challenges of Cloud Computing</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. Cloud Service Models</h4>
+                    <ul>
+                        <li>IaaS (Infrastructure as a Service)</li>
+                        <li>PaaS (Platform as a Service)</li>
+                        <li>SaaS (Software as a Service)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Cloud Deployment Models</h4>
+                    <ul>
+                        <li>Public Cloud</li>
+                        <li>Private Cloud</li>
+                        <li>Hybrid Cloud</li>
+                        <li>Community Cloud</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4. Basic Networking Concepts for Cloud</h4>
+                    <ul>
+                        <li>Networking Basics (IP, DNS, Load Balancers, Firewalls)</li>
+                        <li>Introduction to Virtual Private Network (VPN)</li>
+                        <li>Basics of NAT (Network Address Translation) and Subnetting</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>5. Virtualization</h4>
+                    <ul>
+                        <li>What is Virtualization?</li>
+                        <li>Hypervisors (Type 1 vs. Type 2)</li>
+                        <li>Virtual Machines vs. Containers</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>6. Introduction to Major Cloud Providers</h4>
+                    <ul>
+                        <li>Overview of AWS, Microsoft Azure, Google Cloud, IBM Cloud, etc.</li>
+                        <li>Key Differences Between Providers</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>7. Hands-On Practice</h4>
+                    <ul>
+                        <li>Sign up for free tiers of AWS, Azure, or Google Cloud</li>
+                        <li>Practice launching a virtual machine (EC2, Compute Engine, etc.)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Phase 2: Core Cloud Concepts</h3>
+            <ul>
+                <li>
+                    <h4>1. Compute Services</h4>
+                    <ul>
+                        <li>Understanding Virtual Machines</li>
+                        <li>Auto-Scaling and Load Balancing</li>
+                        <li>Introduction to Serverless Computing (AWS Lambda, Azure Functions)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. Storage Services</h4>
+                    <ul>
+                        <li>Object Storage (S3, Blob Storage)</li>
+                        <li>Block Storage (EBS, Persistent Disks)</li>
+                        <li>File Storage</li>
+                        <li>Backup and Disaster Recovery</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Database Services</h4>
+                    <ul>
+                        <li>Relational Databases (RDS, Azure SQL)</li>
+                        <li>NoSQL Databases (DynamoDB, CosmosDB, Bigtable)</li>
+                        <li>Database as a Service (DBaaS)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4. Networking in Cloud</h4>
+                    <ul>
+                        <li>VPC (Virtual Private Cloud)</li>
+                        <li>Cloud DNS</li>
+                        <li>CDN (Content Delivery Network) such as CloudFront</li>
+                        <li>Peering, VPNs, and Direct Connect</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>5. Identity and Access Management (IAM)</h4>
+                    <ul>
+                        <li>IAM Basics</li>
+                        <li>Roles, Policies, and Permissions</li>
+                        <li>Multi-Factor Authentication (MFA)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>6. Monitoring and Logging</h4>
+                    <ul>
+                        <li>CloudWatch, Azure Monitor, and Stackdriver</li>
+                        <li>Centralized Log Management</li>
+                        <li>Alerts and Notifications</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>7. Pricing and Cost Management</h4>
+                    <ul>
+                        <li>Cost Structure of Cloud Services</li>
+                        <li>Cost Optimization Strategies</li>
+                        <li>Tools for Billing and Monitoring Usage</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Phase 3: Advanced Cloud Concepts</h3>
+            <ul>
+                <li>
+                    <h4>1. Cloud Architecture and Design</h4>
+                    <ul>
+                        <li>Principles of Cloud-Native Architecture</li>
+                        <li>12-Factor Apps</li>
+                        <li>High Availability and Fault Tolerance</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. DevOps in Cloud</h4>
+                    <ul>
+                        <li>CI/CD Pipelines</li>
+                        <li>Infrastructure as Code (IaC) using Terraform, AWS CloudFormation, or Azure Resource Manager</li>
+                        <li>Configuration Management Tools (Ansible, Chef, Puppet)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Security in Cloud</h4>
+                    <ul>
+                        <li>Encryption (Data at Rest and In Transit)</li>
+                        <li>Shared Responsibility Model</li>
+                        <li>Secure Access Patterns</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4. Advanced Storage and Databases</h4>
+                    <ul>
+                        <li>Data Warehousing (Redshift, BigQuery)</li>
+                        <li>Data Lake</li>
+                        <li>Advanced Caching (Redis, Memcached)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>5. Cloud-Native Tools</h4>
+                    <ul>
+                        <li>Containerization (Docker)</li>
+                        <li>Orchestration (Kubernetes)</li>
+                        <li>Microservices Architecture</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>6. Networking for Enterprises</h4>
+                    <ul>
+                        <li>Multi-Region Deployment</li>
+                        <li>Cross-Region Replication</li>
+                        <li>Advanced Networking Tools (Traffic Manager, Global Accelerator)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Phase 4: Specialized Cloud Topics</h3>
+            <ul>
+                <li>
+                    <h4>1. Multi-Cloud Strategies</h4>
+                    <ul>
+                        <li>Multi-Cloud Architectures</li>
+                        <li>Challenges in Multi-Cloud Management</li>
+                        <li>Tools for Multi-Cloud (Kubernetes, HashiCorp Tools)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. Hybrid Cloud</h4>
+                    <ul>
+                        <li>Hybrid Cloud Use Cases</li>
+                        <li>On-Premise Integration with Cloud</li>
+                        <li>Tools like Anthos and Azure Arc</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Edge Computing</h4>
+                    <ul>
+                        <li>Introduction to Edge Computing</li>
+                        <li>Use Cases in IoT and Low-Latency Applications</li>
+                        <li>Services like AWS Greengrass, Azure IoT Edge</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4. Big Data and Machine Learning</h4>
+                    <ul>
+                        <li>Big Data Processing (EMR, Dataflow)</li>
+                        <li>Machine Learning Platforms (SageMaker, Azure ML, TensorFlow on Cloud)</li>
+                        <li>AI Services (Vision API, Speech API)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>5. Compliance and Governance</h4>
+                    <ul>
+                        <li>GDPR, HIPAA, and Other Compliance Standards</li>
+                        <li>Governance Frameworks in Cloud</li>
+                        <li>Auditing and Compliance Tools</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Phase 5: Real-World Applications</h3>
+            <ul>
+                <li>
+                    <h4>1. Cloud Migration</h4>
+                    <ul>
+                        <li>Planning and Assessing Cloud Migration</li>
+                        <li>Migrating Applications, Databases, and Workloads</li>
+                        <li>Cloud Migration Tools</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. Disaster Recovery and Backup</h4>
+                    <ul>
+                        <li>Setting up Disaster Recovery Plans</li>
+                        <li>Replication and Snapshots</li>
+                        <li>Geo-Redundant Solutions</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Building Cloud Applications</h4>
+                    <ul>
+                        <li>Design and Develop Scalable Applications</li>
+                        <li>Hands-on Projects:
+                            <ul>
+                                <li>Build a Static Website using S3/Cloud Storage</li>
+                                <li>Develop and Deploy a Web Application using PaaS</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4. Industry-Specific Solutions</h4>
+                    <ul>
+                        <li>Financial Services (Compliance, Security)</li>
+                        <li>Healthcare (HIPAA, Secure Data Handling)</li>
+                        <li>Gaming, Media, and Retail Solutions</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Phase 6: Advanced Certifications and Career Readiness</h3>
+            <ul>
+                <li>
+                    <h4>1. Cloud Certifications</h4>
+                    <ul>
+                        <li>Beginner: AWS Cloud Practitioner, Azure Fundamentals, Google Associate Cloud Engineer</li>
+                        <li>Intermediate: AWS Solutions Architect Associate, Azure Administrator, Google Professional Cloud Architect</li>
+                        <li>Advanced: AWS Solutions Architect Professional, Azure DevOps Engineer, Google Professional Data Engineer</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2. Cloud Development and Operations</h4>
+                    <ul>
+                        <li>Continuous Deployment of Applications</li>
+                        <li>Application Monitoring and Performance Tuning</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3. Freelancing or Industry Applications</h4>
+                    <ul>
+                        <li>Offer Cloud Services (Migration, Optimization)</li>
+                        <li>Contribute to Open-Source Cloud Projects</li>
+                        <li>Build a Cloud Portfolio</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </i></ul>
+    <hr/>
+
+
+    <h2>6.Artificial Intelligence and Machine Learning Roadmap</h2>
+    
+    <h3><i>Phase 1: Foundations</i></h3>
+    <ul><i>
+        <li>
+            <strong>Mathematics Basics</strong>
+            <ul>
+                <li>Linear Algebra
+                    <ul>
+                        <li>Vectors, Matrices, and Operations</li>
+                        <li>Eigenvalues and Eigenvectors</li>
+                        <li>Singular Value Decomposition (SVD)</li>
+                    </ul>
+                </li>
+                <li>Calculus
+                    <ul>
+                        <li>Derivatives and Integrals</li>
+                        <li>Partial Derivatives and Gradients</li>
+                        <li>Chain Rule and Applications in Optimization</li>
+                    </ul>
+                </li>
+                <li>Probability and Statistics
+                    <ul>
+                        <li>Basic Probability Rules</li>
+                        <li>Random Variables and Distributions</li>
+                        <li>Bayes’ Theorem</li>
+                        <li>Hypothesis Testing, Confidence Intervals</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Programming Skills</strong>
+            <ul>
+                <li>Python Basics
+                    <ul>
+                        <li>Data Types, Loops, and Conditionals</li>
+                        <li>Functions and File Handling</li>
+                    </ul>
+                </li>
+                <li>Python Libraries for AI/ML
+                    <ul>
+                        <li>NumPy, Pandas, Matplotlib, Seaborn</li>
+                        <li>Scikit-learn, TensorFlow, PyTorch</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Data Handling</strong>
+            <ul>
+                <li>Data Cleaning and Preprocessing</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Handling Missing Data and Outliers</li>
+                <li>Feature Engineering and Feature Scaling</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Phase 2: Machine Learning Fundamentals</h3>
+    <ul>
+        <li>
+            <strong>Introduction to Machine Learning</strong>
+            <ul>
+                <li>Types of ML: Supervised, Unsupervised, Reinforcement Learning</li>
+                <li>Steps in a Machine Learning Workflow</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Supervised Learning</strong>
+            <ul>
+                <li>Regression
+                    <ul>
+                        <li>Linear Regression, Polynomial Regression</li>
+                        <li>Regularization: Ridge, Lasso</li>
+                    </ul>
+                </li>
+                <li>Classification
+                    <ul>
+                        <li>Logistic Regression</li>
+                        <li>Decision Trees, Random Forests</li>
+                        <li>Support Vector Machines (SVM)</li>
+                        <li>K-Nearest Neighbors (KNN)</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Unsupervised Learning</strong>
+            <ul>
+                <li>Clustering: K-Means, Hierarchical Clustering, DBSCAN</li>
+                <li>Dimensionality Reduction: PCA, t-SNE, Autoencoders</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Model Evaluation</strong>
+            <ul>
+                <li>Metrics: Accuracy, Precision, Recall, F1-Score, AUC-ROC</li>
+                <li>Cross-Validation</li>
+                <li>Bias-Variance Tradeoff</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Phase 3: Deep Learning</h3>
+    <ul>
+        <li>
+            <strong>Neural Networks</strong>
+            <ul>
+                <li>Introduction to Perceptrons and Artificial Neural Networks</li>
+                <li>Activation Functions (ReLU, Sigmoid, Tanh)</li>
+                <li>Forward and Backpropagation</li>
+                <li>Optimization Algorithms: Gradient Descent, Adam</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Convolutional Neural Networks (CNNs)</strong>
+            <ul>
+                <li>Image Processing Basics</li>
+                <li>CNN Architecture: Convolution, Pooling, Fully Connected Layers</li>
+                <li>Applications in Image Classification and Object Detection</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Recurrent Neural Networks (RNNs)</strong>
+            <ul>
+                <li>Sequential Data and Time Series</li>
+                <li>RNN Architecture and Applications</li>
+                <li>Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRUs)</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Generative Models</strong>
+            <ul>
+                <li>Variational Autoencoders (VAEs)</li>
+                <li>Generative Adversarial Networks (GANs)</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Phase 4: Advanced Topics</h3>
+    <ul>
+        <li>
+            <strong>Natural Language Processing (NLP)</strong>
+            <ul>
+                <li>Text Preprocessing and Tokenization</li>
+                <li>Bag of Words, TF-IDF</li>
+                <li>Word Embeddings: Word2Vec, GloVe</li>
+                <li>Transformers and BERT</li>
+                <li>Chatbots and Sentiment Analysis</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Reinforcement Learning</strong>
+            <ul>
+                <li>Markov Decision Processes (MDPs)</li>
+                <li>Q-Learning and Deep Q-Learning</li>
+                <li>Policy Gradient Methods</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Advanced Architectures</strong>
+            <ul>
+                <li>Attention Mechanisms</li>
+                <li>Transformer Models: GPT, Vision Transformers</li>
+                <li>Multi-task and Transfer Learning</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Phase 5: Tools and Deployment</h3>
+    <ul>
+        <li>
+            <strong>Cloud Platforms</strong>
+            <ul>
+                <li>AWS, Google Cloud, Azure for AI/ML</li>
+                <li>Using Pre-trained Models and APIs</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Deployment</strong>
+            <ul>
+                <li>Flask/Django for Web Deployment</li>
+                <li>Docker and Kubernetes</li>
+                <li>Model Optimization for Production</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Phase 6: Real-World Applications and Projects</h3>
+    <ul>
+        <li>
+            <strong>AI Projects</strong>
+            <ul>
+                <li>Personal Assistant (NLP + Speech Recognition)</li>
+                <li>Image Classification App (CNN)</li>
+                <li>Stock Market Predictor (RNN/LSTM)</li>
+                <li>Fake News Detector (NLP)</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Research and Ethics</strong>
+            <ul>
+                <li>AI Fairness and Bias</li>
+                <li>Explainable AI</li>
+                <li>Staying Updated with Latest Research</li>
+            </ul>
+        </li>
+    </i></ul>
+
+<hr/>
+
+
+
+<h2>7.Cybersecurity Roadmap: From Beginner to Advanced</h2>
+
+<h3>Phase 1: Foundations</h3>
+<ul><i>
+    <li><strong>Introduction to Cybersecurity</strong>
+        <ul>
+            <li>Definition and importance of cybersecurity.</li>
+            <li>Key terminologies: threats, vulnerabilities, risks.</li>
+            <li>Overview of common attacks (e.g., phishing, ransomware).</li>
+        </ul>
+    </li>
+    <li><strong>Basic Networking Concepts</strong>
+        <ul>
+            <li>Networking models (OSI, TCP/IP).</li>
+            <li>IP addressing, subnets, and routing basics.</li>
+            <li>Common protocols: HTTP/S, FTP, DNS, ARP, ICMP.</li>
+        </ul>
+    </li>
+    <li><strong>Operating System Basics</strong>
+        <ul>
+            <li>Windows and Linux basics.</li>
+            <li>File systems, permissions, and user management.</li>
+            <li>Command-line tools and scripting basics (PowerShell and Bash).</li>
+        </ul>
+    </li>
+    <li><strong>Cybersecurity Laws and Ethics</strong>
+        <ul>
+            <li>Legal frameworks (GDPR, HIPAA, etc.).</li>
+            <li>Ethical hacking and responsible disclosure.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Phase 2: Intermediate Skills</h3>
+<ul>
+    <li><strong>System Security</strong>
+        <ul>
+            <li>OS hardening techniques.</li>
+            <li>Endpoint security tools and antivirus mechanisms.</li>
+            <li>Secure configuration and patch management.</li>
+        </ul>
+    </li>
+    <li><strong>Network Security</strong>
+        <ul>
+            <li>Firewall configurations (e.g., pfSense, Cisco).</li>
+            <li>VPNs and secure communication.</li>
+            <li>Intrusion detection and prevention systems (IDS/IPS).</li>
+        </ul>
+    </li>
+    <li><strong>Cryptography</strong>
+        <ul>
+            <li>Basics of encryption and hashing.</li>
+            <li>Symmetric vs. asymmetric encryption.</li>
+            <li>Public Key Infrastructure (PKI).</li>
+        </ul>
+    </li>
+    <li><strong>Web Application Security</strong>
+        <ul>
+            <li>Common vulnerabilities (OWASP Top 10).</li>
+            <li>Tools like Burp Suite, OWASP ZAP.</li>
+            <li>Secure coding practices.</li>
+        </ul>
+    </li>
+    <li><strong>Vulnerability Management</strong>
+        <ul>
+            <li>Using tools like Nessus, OpenVAS.</li>
+            <li>Conducting vulnerability scans and interpreting reports.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Phase 3: Advanced Skills</h3>
+<ul>
+    <li><strong>Penetration Testing</strong>
+        <ul>
+            <li>Phases: Reconnaissance, scanning, exploitation, reporting.</li>
+            <li>Tools: Metasploit, Nmap, Wireshark.</li>
+            <li>Practice environments: Hack The Box, TryHackMe.</li>
+        </ul>
+    </li>
+    <li><strong>Incident Response</strong>
+        <ul>
+            <li>Creating incident response plans.</li>
+            <li>Forensics basics: memory dumps, log analysis.</li>
+            <li>SIEM tools (e.g., Splunk, ELK Stack).</li>
+        </ul>
+    </li>
+    <li><strong>Malware Analysis</strong>
+        <ul>
+            <li>Types of malware and attack vectors.</li>
+            <li>Tools: Ghidra, IDA Pro, Sandbox environments.</li>
+            <li>Behavior analysis and reverse engineering basics.</li>
+        </ul>
+    </li>
+    <li><strong>Advanced Cryptography</strong>
+        <ul>
+            <li>Steganography.</li>
+            <li>Blockchain security basics.</li>
+            <li>Post-quantum cryptography.</li>
+        </ul>
+    </li>
+    <li><strong>Cloud Security</strong>
+        <ul>
+            <li>AWS, Azure, GCP security fundamentals.</li>
+            <li>Identity and access management in the cloud.</li>
+            <li>Securing cloud workloads and data.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Phase 4: Specializations and Mastery</h3>
+<ul>
+    <li><strong>Red Teaming and Ethical Hacking</strong>
+        <ul>
+            <li>Advanced social engineering techniques.</li>
+            <li>Developing custom exploits.</li>
+            <li>Conducting full red team engagements.</li>
+        </ul>
+    </li>
+    <li><strong>Blue Teaming and Defense</strong>
+        <ul>
+            <li>Threat hunting and analysis.</li>
+            <li>Advanced SIEM configurations.</li>
+            <li>Building and managing a Security Operations Center (SOC).</li>
+        </ul>
+    </li>
+    <li><strong>Governance, Risk, and Compliance</strong>
+        <ul>
+            <li>Conducting risk assessments.</li>
+            <li>Auditing for compliance (ISO 27001, NIST).</li>
+            <li>Creating cybersecurity policies and frameworks.</li>
+        </ul>
+    </li>
+    <li><strong>Advanced Topics</strong>
+        <ul>
+            <li>IoT and OT security.</li>
+            <li>AI and ML in cybersecurity.</li>
+            <li>Zero Trust architecture.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Key Resources and Certifications</h3>
+<ul>
+    <li><strong>Learning Platforms</strong>
+        <ul>
+            <li>Cybrary, TryHackMe, Hack The Box.</li>
+            <li>YouTube channels like Professor Messer, NetworkChuck.</li>
+        </ul>
+    </li>
+    <li><strong>Certifications</strong>
+        <ul>
+            <li>Beginner: CompTIA Security+, Certified Ethical Hacker (CEH).</li>
+            <li>Intermediate: Offensive Security Certified Professional (OSCP), GIAC Certified Incident Handler (GCIH).</li>
+            <li>Advanced: CISSP, CISM, Offensive Security Certified Expert (OSCE).</li>
+        </ul>
+    </li>
+    <li><strong>Books</strong>
+        <ul>
+            <li>"The Web Application Hacker’s Handbook."</li>
+            <li>"Hacking: The Art of Exploitation."</li>
+            <li>"Cybersecurity and Cyberwar: What Everyone Needs to Know."</li>
+        </ul>
+    </li>
+    <li><strong>Practical Tools</strong>
+        <ul>
+            <li>Practice labs: VirtualBox/VMware, Kali Linux.</li>
+            <li>Simulated attacks: Metasploit, Wireshark.</li>
+        </ul>
+    </li>
+</i></ul>
+
+<hr/>
+</p>
+            </div>
+
+            <div id="progress" class="hidden">
+                <h4>Progress:</h4>
+                <p>Completed: Basic Python syntax, OOP concepts, and data structures. Pending: Advanced algorithms, web development, and machine learning.</p>
+            </div>
+
+            <div id="notes" class="hidden">
+                <h4>Notes:</h4>
+                <p>Python is an easy-to-learn, high-level programming language. It is used for web development, automation, data science, and more. Object-Oriented Programming (OOP) focuses on using classes and objects to model real-world problems. Key topics include inheritance, polymorphism, and encapsulation...</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -9,43 +9,75 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            width: 100%;
+            background-color: #1C1C1C; /* Dark Charcoal Background */
         }
+
         header {
-            background-color: #333;
-            color: white;
+            background-color: #121212; /* Very Dark Charcoal */
+            color: #B0B0B0; /* Light Gray for contrast */
             padding: 10px;
             text-align: center;
         }
+
         nav {
-            background-color: #444;
+            background-color: #333333; /* Dark Charcoal */
             overflow: hidden;
             text-align: center;
         }
+
         nav a {
-            color: white;
+            color: #B0B0B0; /* Light Gray */
             padding: 14px 20px;
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
             display: inline-block;
         }
+
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
         }
+
         .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
+            padding: 10px;
         }
+
         .note {
-            background-color: white;
-            padding: 15px;
+            background-color: #2C2C2C; /* Dark Charcoal */
+            padding: 30px;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-radius: 30px;
+            color: #B0B0B0; /* Light Gray */
         }
+
         .note h3 {
             margin-top: 0;
+            color: #F1F1F1; /* Off-White for titles */
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4D4D4D; /* Medium Dark Charcoal */
+            color: #F1F1F1; /* Off-White */
+        }
+
+        .btn:hover {
+            background-color: #333333; /* Dark Charcoal */
+            color: #B0B0B0; /* Light Gray */
+        
         }
     </style>
 </head>
@@ -68,18 +100,38 @@
 
     <div class="container">
         <div class="note">
-            <h3>Newton's Laws of Motion</h3>
-            <p>Newton’s laws describe the relationship between a body and the forces acting on it. These laws are fundamental in classical mechanics...</p>
-        </div>
-        <div class="note">
-            <h3>Thermodynamics</h3>
-            <p>Thermodynamics is the study of heat, energy, and work. Key laws include the first law (conservation of energy) and the second law (entropy)...</p>
-        </div>
-        <div class="note">
-            <h3>Electromagnetism</h3>
-            <p>Electromagnetism studies the relationship between electric fields and magnetic fields. Key concepts include Coulomb's law and Faraday's law...</p>
+            <h3>Physics Concepts</h3>
+            <button class="btn" onclick="toggleVisibility('roadmap')">Toggle Roadmap</button>
+            <button class="btn" onclick="toggleVisibility('progress')">Toggle Progress</button>
+            <button class="btn" onclick="toggleVisibility('notes')">Toggle Notes</button>
+
+            <div id="roadmap" class="hidden">
+                <h4>Roadmap:</h4>
+                <p>Start with the basics of Newton's laws, then explore thermodynamics, followed by electromagnetism. Proceed to advanced topics like quantum mechanics and relativity.</p>
+            </div>
+
+            <div id="progress" class="hidden">
+                <h4>Progress:</h4>
+                <p>Completed: Newton's laws, basic thermodynamics. Pending: Electromagnetism, quantum mechanics, and relativity.</p>
+            </div>
+
+            <div id="notes" class="hidden">
+                <h4>Notes:</h4>
+                <p>Physics explores the fundamental forces and principles governing the universe. Important topics include Newton's laws of motion, thermodynamics, and electromagnetism...</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
 
 </body>
 </html>
